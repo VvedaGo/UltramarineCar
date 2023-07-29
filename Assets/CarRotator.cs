@@ -4,9 +4,11 @@ using static Enums;
 
 public class CarRotator : MonoBehaviour
 {
+    [SerializeField] private CarTriggerObserver _carTriggerObserver;
     private InputSystem _inputSystem;
     private bool _inRotation;
     private DirectionRotate _directionRotate;
+    private bool _canRotate;
 
    
     private void Awake()
@@ -14,14 +16,27 @@ public class CarRotator : MonoBehaviour
        _inputSystem= FindObjectOfType<InputSystem>();
        _inputSystem.MouseDown += StartRotate;
        _inputSystem.MouseUp += EndRotate;
+       _carTriggerObserver.SetNewDirection += SetDirectionRotate;
        _directionRotate = DirectionRotate.Left;
     }
 
-    
+    private void OnDisable()
+    {
+        _inputSystem.MouseDown -= StartRotate;
+        _inputSystem.MouseUp -= EndRotate;
+        _carTriggerObserver.SetNewDirection -= SetDirectionRotate;
+    }
+
+
     private void StartRotate()
     {
         Debug.Log("Start rotayte");
-        _inRotation = true;
+        if (_canRotate)
+        {
+            _inRotation = true;
+            _canRotate = false;
+        }
+       
     }
 
     public void EndRotate()
@@ -33,12 +48,13 @@ public class CarRotator : MonoBehaviour
     public void SetDirectionRotate(DirectionRotate directionRotate)
     {
         _directionRotate = directionRotate;
+        _canRotate = true;
     }
     private void Update()
     {
         if (_inRotation)
         {
-            transform.eulerAngles+=new Vector3(0,0.3f,0)*(int)_directionRotate;
+            transform.eulerAngles+=new Vector3(0,0.5f,0)*(int)_directionRotate;
         }
     }
 }
