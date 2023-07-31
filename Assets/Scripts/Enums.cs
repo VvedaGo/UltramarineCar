@@ -2,6 +2,7 @@ public class Enums
 {
     public enum DirectionRotate
     {
+        None=0,
         Left=1,
         Right=-1
     }

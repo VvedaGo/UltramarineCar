@@ -6,6 +6,7 @@ public class CarTriggerObserver : MonoBehaviour
     public Action Crash;
     public Action<Enums.DirectionRotate> SetNewDirection;
     public Action<int> OnScoreUp;
+    public Action EnterOnCentre;
     private void OnCollisionEnter(Collision other)
     {
         Debug.Log("OnColision");
@@ -25,6 +26,11 @@ public class CarTriggerObserver : MonoBehaviour
         if (other.transform.TryGetComponent(out ZoneScore zoneScore))
         {
             OnScoreUp?.Invoke(1);
+        }
+
+        if (other.transform.TryGetComponent(out CentreTile centre))
+        {
+            EnterOnCentre?.Invoke();
         }
     }
 }

@@ -9,13 +9,13 @@ public class InputSystem : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Invoke down");
+           
             MouseDown?.Invoke();
             
         }
         else if (Input.GetMouseButtonUp(0))
         {
-            Debug.Log("Invoe up");
+           
             MouseUp?.Invoke();
         }
     }
