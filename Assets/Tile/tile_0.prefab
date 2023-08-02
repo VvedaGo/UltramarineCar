@@ -1251,7 +1251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartOrFinish: 0
   SideTile: 2
-  NumberOfWay: 1
+  NumberOfWay: 2
 --- !u!1 &3251680234580781559
 GameObject:
   m_ObjectHideFlags: 0

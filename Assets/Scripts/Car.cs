@@ -4,6 +4,7 @@ using UnityEngine;
 public class Car : MonoBehaviour
 {
     [SerializeField] private CarTriggerObserver _triggerObserver;
+    [SerializeField] private RoadDetector _roadDetector;
     [SerializeField] private CarMover _carMover;
     [SerializeField] private CarRotator _carRotator;
     [SerializeField] private WayBuilder _builder;
@@ -14,6 +15,7 @@ public class Car : MonoBehaviour
         _triggerObserver.Crash += Crash;
         _triggerObserver.OnScoreUp += AddScore;
         _triggerObserver.EnterOnCentre += EndTile;
+        _roadDetector.FromRoad += Crash;
     }
 
     private void EndTile()
