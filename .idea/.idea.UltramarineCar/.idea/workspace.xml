@@ -20,24 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32187c82-a5fd-4392-8a9f-eb4a5d164e38" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameStateMachine.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameStateMachine.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Setting.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Setting.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/SettingData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/SettingData.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UltramarineCar/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UltramarineCar/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UltramarineCar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UltramarineCar/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BaseTile.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BaseTile.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DirectionOnTile.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DirectionOnTile.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EntryPoint.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EntryPoint.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Baricade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Baricade.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Car.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Car.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CarRotator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CarRotator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WayBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WayBuilder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tile/tile_0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tile/tile_0.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/MenuHud.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/MenuHud.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/CarRotator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/CarRotator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/MenuHud.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/MenuHud.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/AssetProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/AssetProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/BootstrapState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/BootstrapState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/UiGameFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/UiGameFactory.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +42,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/RoadDetector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/861E23C6-7270-4A4A-8ECA-9C234AF0CAC5/15/f86e6051/IEnumerator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -63,17 +60,36 @@
         <option value="$PROJECT_DIR$/Assets/DirectionOnTile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Extention.cs" />
         <option value="$PROJECT_DIR$/Assets/BaseTile.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/InputSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enums.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Extension.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CarTriggerObserver.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Baricade.cs" />
         <option value="$PROJECT_DIR$/Assets/RoadDetector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Car.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CarRotator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WayBuilder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InputSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EntryPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AllServices.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GameFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CarRotator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MenuHud.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AssetProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UiGameFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BootstrapState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameStateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/ICoroutineRunner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Services/GameFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GameStateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/LoadInfoState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/EntryPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AssetPath.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/SceneLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/UiController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/CarRotator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/UiGameFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/BootstrapState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/MenuHud.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Setting.cs" />
       </list>
     </option>
   </component>
@@ -119,7 +135,7 @@
       <workItem from="1690641290134" duration="378000" />
       <workItem from="1690697901753" duration="8065000" />
       <workItem from="1690819383088" duration="7498000" />
-      <workItem from="1690983026964" duration="2307000" />
+      <workItem from="1690983026964" duration="12282000" />
     </task>
     <servers />
   </component>
@@ -141,6 +157,14 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2714" y="217" key="RiderGenerateDialog" timestamp="1690991497375">
+      <screen x="1920" y="0" width="1920" height="1032" />
+    </state>
+    <state x="2714" y="217" key="RiderGenerateDialog/0.0.1536.816/1920.0.1920.1032@1920.0.1920.1032" timestamp="1690991497375" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1690993901530">
+      <screen x="1920" y="0" width="1920" height="1032" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/0.0.1536.816/1920.0.1920.1032@1920.0.1920.1032" timestamp="1690993901530" />
     <state x="2543" y="223" width="672" height="678" key="search.everywhere.popup" timestamp="1690986492868">
       <screen x="1920" y="0" width="1920" height="1032" />
     </state>
