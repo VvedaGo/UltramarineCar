@@ -36,20 +36,20 @@ public static class Extension
         return Enums.NumberOfWay.Second;
     }
 
-    public static Vector2Int DirectionBySide(this Enums.SideTile side)
+    public static Vector3 DirectionBySide(this Enums.SideTile side)
     {
         switch (side)
         {
             case Enums.SideTile.Down:
-                return new Vector2Int(0,-1);
+                return new Vector3(0,0,-1);
             case Enums.SideTile.Left:
-                return new Vector2Int(-1,0);
+                return new Vector3(-1,0,0);
             case Enums.SideTile.Up:
-                return new Vector2Int(0,1);
+                return new Vector3(0,0,1);
             case Enums.SideTile.Right:
-                return new Vector2Int(1,0);
+                return new Vector3(1,0,0);
             default:
-                return new Vector2Int(0,0);
+                return new Vector3(0,0,0);
         }
     }
 }
