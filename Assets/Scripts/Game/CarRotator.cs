@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using static Enums;
 
@@ -47,9 +46,9 @@ public class CarRotator : MonoBehaviour
         _inRotation = false;
         _canRotate = true;
         _goalRotateAngle = transform.eulerAngles + new Vector3(0, 90, 0) * (int) _directionRotate;
-        if (_goalRotateAngle.y >= 360)
+        if (_goalRotateAngle.y > 360)
             _goalRotateAngle -= new Vector3(0, 360, 0);
-        if (_goalRotateAngle.y <= 0)
+        if (_goalRotateAngle.y < 0)
             _goalRotateAngle += new Vector3(0, 360, 0);
     }
 
@@ -60,9 +59,9 @@ public class CarRotator : MonoBehaviour
             _directionRotate = directionRotate;
             _canRotate = true;
             _goalRotateAngle = transform.eulerAngles + new Vector3(0, 90, 0) * (int) _directionRotate;
-            if (_goalRotateAngle.y >= 360)
+            if (_goalRotateAngle.y > 360)
                 _goalRotateAngle -= new Vector3(0, 360, 0);
-            if (_goalRotateAngle.y <= 0)
+            if (_goalRotateAngle.y < 0)
                 _goalRotateAngle += new Vector3(0, 360, 0);
         }
         else
@@ -71,15 +70,12 @@ public class CarRotator : MonoBehaviour
         }
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (_inRotation)
         {
             transform.eulerAngles += new Vector3(0, 1.4f, 0) * (int) _directionRotate;
-            if (transform.eulerAngles.y >= 360)
-                transform.eulerAngles -= new Vector3(0, 360, 0);
-            if (transform.eulerAngles.y < 0)
-                transform.eulerAngles += new Vector3(0, 360, 0);
+          
             if (Vector3.Distance(transform.eulerAngles, _goalRotateAngle) <= 3.8f)
             {
                 transform.eulerAngles = _goalRotateAngle;
@@ -89,7 +85,4 @@ public class CarRotator : MonoBehaviour
         }
     }
 
-    private void EndRotation()
-    {
-    }
 }
