@@ -1,6 +1,10 @@
 using System.Collections;
+using UnityEngine;
 
-public interface ICoroutineRunner
+namespace Infrastructure
 {
-    void StartCoroutine(IEnumerator loadScene);
+    public interface ICoroutineRunner
+    {
+        Coroutine StartCoroutine(IEnumerator coroutine);
+    }
 }

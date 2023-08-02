@@ -5,7 +5,7 @@ public class CarRotator : MonoBehaviour
 {
     [SerializeField] private CarTriggerObserver _carTriggerObserver;
     [SerializeField] private DirectionRotate _directionRotate;
-    
+    [SerializeField] private float _speedRotate;
     private InputSystem _inputSystem;
     private bool _inRotation;
     private bool _canRotate;
@@ -74,9 +74,9 @@ public class CarRotator : MonoBehaviour
     {
         if (_inRotation)
         {
-            transform.eulerAngles += new Vector3(0, 1.4f, 0) * (int) _directionRotate;
+            transform.eulerAngles += new Vector3(0, _speedRotate, 0) * (int) _directionRotate;
           
-            if (Vector3.Distance(transform.eulerAngles, _goalRotateAngle) <= 3.8f)
+            if (Vector3.Distance(transform.eulerAngles, _goalRotateAngle) <= _speedRotate*2)
             {
                 transform.eulerAngles = _goalRotateAngle;
                 _directionRotate = _nextDirection;

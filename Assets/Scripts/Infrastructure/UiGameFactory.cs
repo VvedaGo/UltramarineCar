@@ -1,16 +1,20 @@
 using UnityEngine;
 
-public class UiGameFactory : IService
+namespace Infrastructure
 {
-    private readonly AssetProvider _assetProvider;
-
-    public UiGameFactory(AssetProvider assetProvider)
+    public class UiGameFactory : IService
     {
-        _assetProvider = assetProvider;
-    }
+        private readonly AssetProvider _assetProvider;
 
-    public void CreateMenuHud()
-    {
-        MenuHud menuHud = Object.Instantiate(_assetProvider.GetMenuHud());
+        public UiGameFactory(AssetProvider assetProvider)
+        {
+            _assetProvider = assetProvider;
+        }
+
+        public MenuHud CreateMenuHud()
+        {
+            MenuHud menuHud = Object.Instantiate(_assetProvider.GetMenuHud());
+            return menuHud;
+        }
     }
 }

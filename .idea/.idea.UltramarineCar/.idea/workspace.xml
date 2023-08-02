@@ -20,31 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32187c82-a5fd-4392-8a9f-eb4a5d164e38" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AllServices.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AllServices.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AssetPath.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AssetPath.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AssetProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AssetProvider.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BootstrapState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BootstrapState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/IGameState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/IGameState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/IService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/IService.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/InputManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/InputManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MenuHud.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MenuHud.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UiGameFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UiGameFactory.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UltramarineCar/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UltramarineCar/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UltramarineCar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UltramarineCar/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CarRotator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CarRotator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EntryPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EntryPoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameStateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InputSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/MenuHud.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/MenuHud.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AssetPath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AssetPath.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Car.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Car.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/UiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/UiController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/BootstrapState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/BootstrapState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/EntryPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/EntryPoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GameStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GameStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/ICoroutineRunner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/ICoroutineRunner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/LoadInfoState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/LoadInfoState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/SceneLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/SceneLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Services/GameFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Services/GameFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/UiGameFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/UiGameFactory.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +44,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/RoadDetector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/861E23C6-7270-4A4A-8ECA-9C234AF0CAC5/15/f86e6051/IEnumerator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -85,8 +77,18 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MenuHud.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AssetProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UiGameFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameStateMachine.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BootstrapState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameStateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/ICoroutineRunner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Services/GameFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/UiGameFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GameStateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/LoadInfoState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/EntryPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AssetPath.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/SceneLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/BootstrapState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/UiController.cs" />
       </list>
     </option>
   </component>
@@ -132,7 +134,7 @@
       <workItem from="1690641290134" duration="378000" />
       <workItem from="1690697901753" duration="8065000" />
       <workItem from="1690819383088" duration="7498000" />
-      <workItem from="1690983026964" duration="7208000" />
+      <workItem from="1690983026964" duration="10555000" />
     </task>
     <servers />
   </component>
@@ -158,6 +160,10 @@
       <screen x="1920" y="0" width="1920" height="1032" />
     </state>
     <state x="2714" y="217" key="RiderGenerateDialog/0.0.1536.816/1920.0.1920.1032@1920.0.1920.1032" timestamp="1690991497375" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1690993901530">
+      <screen x="1920" y="0" width="1920" height="1032" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/0.0.1536.816/1920.0.1920.1032@1920.0.1920.1032" timestamp="1690993901530" />
     <state x="2543" y="223" width="672" height="678" key="search.everywhere.popup" timestamp="1690986492868">
       <screen x="1920" y="0" width="1920" height="1032" />
     </state>

@@ -1,31 +1,38 @@
-using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class UiController : MonoBehaviour
+namespace Game
 {
-    [SerializeField] private GameObject _losePanel;
-    [SerializeField] private TextMeshProUGUI _score;
-    [SerializeField] private Car _car;
-
-    private void Awake()
+    public class UiController : MonoBehaviour
     {
-        _car.ScoreChanged += SetScore;
-    }
+        [SerializeField] private GameObject _losePanel;
+        [SerializeField] private TextMeshProUGUI _score;
+        [SerializeField] private Car _car;
 
-    public void RestartGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
+        private void Awake()
+        {
+            _car.ScoreChanged += SetScore;
+        }
 
-    public void OpenLosePanel()
-    {
-        _losePanel.SetActive(true);
-    }
+        public void RestartGame()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
 
-    public void SetScore(int score)
-    {
-        _score.text = $"Score : {score}";
+        public void MainMenu()
+        {
+            SceneManager.LoadScene("MenuScene");
+        }
+
+        public void OpenLosePanel()
+        {
+            _losePanel.SetActive(true);
+        }
+
+        public void SetScore(int score)
+        {
+            _score.text = $"Score : {score}";
+        }
     }
 }

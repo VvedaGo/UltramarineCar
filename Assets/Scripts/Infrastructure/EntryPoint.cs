@@ -1,10 +1,14 @@
 using UnityEngine;
 
-public class EntryPoint : MonoBehaviour
+namespace Infrastructure
 {
-    private void Awake()
+    public class EntryPoint : MonoBehaviour,ICoroutineRunner
     {
-      GameStateMachine gameStateMachine =new GameStateMachine(new AllServices());  
-      gameStateMachine.Enter<BootstrapState>();
+        private void Awake()
+        {
+            GameStateMachine gameStateMachine =new GameStateMachine(new AllServices(),this);  
+            gameStateMachine.Enter<BootstrapState>();
+            DontDestroyOnLoad(gameObject);
+        }
     }
 }

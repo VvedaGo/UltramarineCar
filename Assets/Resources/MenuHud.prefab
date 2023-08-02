@@ -777,6 +777,7 @@ GameObject:
   - component: {fileID: 6677817118639040059}
   - component: {fileID: 5108887863335204661}
   - component: {fileID: 3282671162979888883}
+  - component: {fileID: -8573160121908454171}
   m_Layer: 5
   m_Name: MenuHud
   m_TagString: Untagged
@@ -869,6 +870,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &-8573160121908454171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5543199302663744794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac86f0480b874b69baf01492f9c63148, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6386838144697964649
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,16 +1,27 @@
-public class LoadInfoState : IGameState
+namespace Infrastructure
 {
-    public LoadInfoState()
+    public class LoadInfoState : IGameState
     {
-    }
+        private readonly GameStateMachine _gameStateMachine;
+        private readonly SceneLoader _sceneLoader;
+        private readonly UiGameFactory _uiGameFactory;
 
-    public void Enter()
-    {
-        
-    }
+        public LoadInfoState(GameStateMachine gameStateMachine,SceneLoader sceneLoader,UiGameFactory uiGameFactory)
+        {
+            _gameStateMachine = gameStateMachine;
+            _sceneLoader = sceneLoader;
+            _uiGameFactory = uiGameFactory;
+        }
 
-    public void Exit()
-    {
+        public void Enter()
+        {
+            _uiGameFactory.CreateMenuHud();
+        }
+
+        public void Exit()
+        {
         
+        }
+
     }
 }
