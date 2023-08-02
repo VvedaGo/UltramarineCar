@@ -46,6 +46,8 @@
             <e p="DirectionOnTile.cs" t="Include" />
             <e p="MenuHud.cs" t="Include" />
             <e p="RoadDetector.cs" t="Include" />
+            <e p="Setting.cs" t="Include" />
+            <e p="SettingData.cs" t="Include" />
             <e p="UiController.cs" t="Include" />
             <e p="WayBuilder.cs" t="Include" />
             <e p="ZoneDirectionSetter.cs" t="Include" />
@@ -63,11 +65,14 @@
             <e p="InputSystem.cs" t="Include" />
             <e p="IService.cs" t="Include" />
             <e p="LoadInfoState.cs" t="Include" />
+            <e p="PlayerProgress.cs" t="Include" />
+            <e p="SaveLoadService.cs" t="Include" />
             <e p="SceneLoader.cs" t="Include" />
             <e p="Services" t="Include">
               <e p="GameFactory.cs" t="Include" />
             </e>
             <e p="UiGameFactory.cs" t="Include" />
+            <e p="WorldData.cs" t="Include" />
           </e>
         </e>
         <e p="Settings" t="Include">
