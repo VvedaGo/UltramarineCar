@@ -19,14 +19,13 @@
             </e>
           </e>
         </e>
-        <e p="GameHud.cs" t="Include" />
-        <e p="LosePanel.cs" t="Include" />
         <e p="Models" t="Include">
           <e p="Car" t="Include" />
           <e p="New" t="Include" />
           <e p="Tree" t="Include" />
         </e>
         <e p="Resources" t="Include">
+          <e p="Car" t="Include" />
           <e p="Service" t="Include" />
         </e>
         <e p="Scenes" t="Include">
@@ -56,6 +55,7 @@
             <e p="ZoneDirectionSetter.cs" t="Include" />
             <e p="ZoneScore.cs" t="Include" />
           </e>
+          <e p="GameHud.cs" t="Include" />
           <e p="Infrastructure" t="Include">
             <e p="AllServices.cs" t="Include" />
             <e p="AssetProvider.cs" t="Include" />
@@ -80,6 +80,10 @@
             </e>
             <e p="UiGameFactory.cs" t="Include" />
             <e p="WorldData.cs" t="Include" />
+          </e>
+          <e p="LosePanel.cs" t="Include" />
+          <e p="StaticData" t="Include">
+            <e p="TilesData.cs" t="Include" />
           </e>
         </e>
         <e p="Settings" t="Include">

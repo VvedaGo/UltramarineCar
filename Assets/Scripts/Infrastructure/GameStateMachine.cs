@@ -14,7 +14,7 @@ namespace Infrastructure
             {
                 [typeof(BootstrapState)]=new BootstrapState(this,allServices,coroutineRunner),
                 [typeof(LoadInfoState)]=new LoadInfoState(this,allServices.Single<SceneLoader>(),allServices.Single<UiGameFactory>(),allServices.Single<WorldData>()),
-                [typeof(GameLoadInfoState)]=new GameLoadInfoState(this,allServices.Single<GameFactory>(),allServices.Single<UiGameFactory>()),
+                [typeof(GameLoadInfoState)]=new GameLoadInfoState(this,allServices.Single<GameFactory>(),allServices.Single<UiGameFactory>(),allServices.Single<WorldData>(),allServices.Single<SceneLoader>()),
                 [typeof(GameLoopState)]=new GameLoopState(this)
             };
         }

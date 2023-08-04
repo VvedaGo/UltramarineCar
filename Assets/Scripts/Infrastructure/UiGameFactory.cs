@@ -19,5 +19,11 @@ namespace Infrastructure
             MenuHud menuHud = Object.Instantiate(_assetProvider.GetMenuHud());
             return menuHud;
         }
+
+        public GameHud CreateGameHud()
+        {
+            GameHud menuHud = Object.Instantiate(_assetProvider.GetGameHud());
+            return menuHud;
+        }
     }
 }
