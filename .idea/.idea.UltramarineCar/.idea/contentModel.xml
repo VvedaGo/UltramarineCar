@@ -28,6 +28,7 @@
           <e p="Service" t="Include" />
         </e>
         <e p="Scenes" t="Include">
+          <e p="GameScene" t="Include" />
           <e p="SampleScene" t="Include" />
         </e>
         <e p="Scripts" t="Include">
@@ -58,15 +59,19 @@
             <e p="AssetProvider.cs" t="Include" />
             <e p="BootstrapState.cs" t="Include" />
             <e p="EntryPoint.cs" t="Include" />
+            <e p="GameLoadInfoState.cs" t="Include" />
+            <e p="GameLoopState.cs" t="Include" />
             <e p="GameStateMachine.cs" t="Include" />
             <e p="ICoroutineRunner.cs" t="Include" />
             <e p="IGameState.cs" t="Include" />
             <e p="InputManager.cs" t="Include" />
             <e p="InputSystem.cs" t="Include" />
+            <e p="ISaveLoadService.cs" t="Include" />
             <e p="IService.cs" t="Include" />
             <e p="LoadInfoState.cs" t="Include" />
             <e p="PlayerProgress.cs" t="Include" />
             <e p="SaveLoadService.cs" t="Include" />
+            <e p="SaveLoadSystem.cs" t="Include" />
             <e p="SceneLoader.cs" t="Include" />
             <e p="Services" t="Include">
               <e p="GameFactory.cs" t="Include" />
@@ -114,7 +119,9 @@
             <e p="EmojiOne.json" t="Include" />
           </e>
         </e>
-        <e p="Tile" t="Include" />
+        <e p="Tile" t="Include">
+          <e p="Prefabs" t="Include" />
+        </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />

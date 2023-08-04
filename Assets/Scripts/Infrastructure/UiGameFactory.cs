@@ -17,7 +17,6 @@ namespace Infrastructure
         public MenuHud CreateMenuHud()
         {
             MenuHud menuHud = Object.Instantiate(_assetProvider.GetMenuHud());
-            menuHud.SetSceneLoader(_sceneLoader);
             return menuHud;
         }
     }

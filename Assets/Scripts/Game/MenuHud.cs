@@ -1,15 +1,39 @@
 using Infrastructure;
+using TMPro;
 using UnityEngine;
 
 namespace Game
 {
     public class MenuHud:MonoBehaviour
     {
+        [SerializeField] private TextMeshProUGUI _bestScore;
+        [SerializeField] private TextMeshProUGUI _coinsCount;
+       
         private SceneLoader _sceneLoader;
+        private GameStateMachine _gameSateMachine;
+        private WorldData _worldData;
 
+        public void Initialize(SceneLoader sceneLoader,GameStateMachine gameStateMachine,WorldData worldData)
+        {
+            _sceneLoader = sceneLoader;
+            _gameSateMachine = gameStateMachine;
+            _worldData = worldData;
+            SetBestScore(_worldData.PlayerProgress.MaxScore);
+            SetCoinsCount(_worldData.PlayerProgress.CountCoins);
+        }
         public void SetSceneLoader(SceneLoader sceneLoader)
         {
             _sceneLoader = sceneLoader;
+        }
+
+        public void SetBestScore(int score)
+        {
+            _bestScore.text = $"Best Score : {score}";
+        }
+
+        public void SetCoinsCount(int count)
+        {
+            _coinsCount.text = $"Coins : {count}";
         }
 
         public void Play()
