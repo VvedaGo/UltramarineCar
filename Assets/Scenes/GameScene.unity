@@ -575,7 +575,7 @@ Transform:
   - {fileID: 1896492187}
   - {fileID: 1431599198}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &245167578
 MonoBehaviour:
@@ -591,7 +591,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _carTriggerObserver: {fileID: 4511833757696451550}
   _directionRotate: 0
-  _speedRotate: 6
+  _speedRotate: 4
 --- !u!114 &245167579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -621,7 +621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f2700b743d6c6944a0a74e1448b0352, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 9
+  moveSpeed: 12
 --- !u!1001 &256014670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4591,7 +4591,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9041790102361316714, guid: 8edc791e7922a4d49b957a35af7664c6, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9041790102361316714, guid: 8edc791e7922a4d49b957a35af7664c6, type: 3}
       propertyPath: m_AnchorMax.x
