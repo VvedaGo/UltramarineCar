@@ -8,5 +8,15 @@ namespace Infrastructure.Services
         {
             _assetProvider = assetProvider;
         }
+
+        public void SpawnCar()
+        {
+            
+        }
+
+        public void SpawnTile()
+        {
+            
+        }
     }
 }

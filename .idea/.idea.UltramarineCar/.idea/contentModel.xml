@@ -19,6 +19,8 @@
             </e>
           </e>
         </e>
+        <e p="GameHud.cs" t="Include" />
+        <e p="LosePanel.cs" t="Include" />
         <e p="Models" t="Include">
           <e p="Car" t="Include" />
           <e p="New" t="Include" />

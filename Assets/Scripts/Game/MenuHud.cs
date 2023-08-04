@@ -21,24 +21,25 @@ namespace Game
             SetBestScore(_worldData.PlayerProgress.MaxScore);
             SetCoinsCount(_worldData.PlayerProgress.CountCoins);
         }
-        public void SetSceneLoader(SceneLoader sceneLoader)
-        {
-            _sceneLoader = sceneLoader;
-        }
 
-        public void SetBestScore(int score)
+        private void SetBestScore(int score)
         {
             _bestScore.text = $"Best Score : {score}";
         }
 
-        public void SetCoinsCount(int count)
+        private void SetCoinsCount(int count)
         {
             _coinsCount.text = $"Coins : {count}";
         }
 
         public void Play()
         {
-            _sceneLoader.Load("GameScene");
+            _sceneLoader.Load("GameScene"/*,GameSceneLoaded*/);
+        }
+
+        private void GameSceneLoaded()
+        {
+            _gameSateMachine.Enter<GameLoadInfoState>();
         }
     }
 }

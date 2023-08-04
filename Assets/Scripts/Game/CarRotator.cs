@@ -8,6 +8,7 @@ namespace Game
         [SerializeField] private CarTriggerObserver _carTriggerObserver;
         [SerializeField] private DirectionRotate _directionRotate;
         [SerializeField] private float _speedRotate;
+      
         private InputSystem _inputSystem;
         private bool _inRotation;
         private bool _canRotate;

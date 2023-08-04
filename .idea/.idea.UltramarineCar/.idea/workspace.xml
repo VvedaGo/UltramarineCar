@@ -20,23 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32187c82-a5fd-4392-8a9f-eb4a5d164e38" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GameLoadInfoState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GameLoadInfoState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GameLoopState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GameLoopState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/ISaveLoadService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/ISaveLoadService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/LosePanel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/LosePanel.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UltramarineCar/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UltramarineCar/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UltramarineCar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UltramarineCar/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/MenuHud.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/MenuHud.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameHud.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameHud.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AssetPath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AssetPath.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Car.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Car.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/CarRotator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/CarRotator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/MenuHud.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/MenuHud.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/SettingData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/SettingData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/BootstrapState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/BootstrapState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/WayBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/WayBuilder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GameLoadInfoState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GameLoadInfoState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GameStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GameStateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/LoadInfoState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/LoadInfoState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/PlayerProgress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/PlayerProgress.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/SaveLoadService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/SaveLoadService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/UiGameFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/UiGameFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Services/GameFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Services/GameFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +50,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/861E23C6-7270-4A4A-8ECA-9C234AF0CAC5/15/f86e6051/IEnumerator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GameHud.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
@@ -83,24 +86,27 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BootstrapState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameStateMachine.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/ICoroutineRunner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Services/GameFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/EntryPoint.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AssetPath.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/SceneLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/UiController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/CarRotator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Setting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/WorldData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GameLoadInfoState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GameLoopState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GameStateMachine.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/PlayerProgress.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/SaveLoadService.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/SettingData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/BootstrapState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/MenuHud.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/LoadInfoState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/UiGameFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/MenuHud.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Services/GameFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/LosePanel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/CarRotator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Car.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameHud.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AssetPath.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GameLoadInfoState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GameStateMachine.cs" />
       </list>
     </option>
   </component>
@@ -147,7 +153,7 @@
       <workItem from="1690697901753" duration="8065000" />
       <workItem from="1690819383088" duration="7498000" />
       <workItem from="1690983026964" duration="12282000" />
-      <workItem from="1691161917198" duration="3716000" />
+      <workItem from="1691161917198" duration="6803000" />
     </task>
     <servers />
   </component>
@@ -177,9 +183,9 @@
       <screen x="1920" y="0" width="1920" height="1032" />
     </state>
     <state width="600" height="428" key="javadoc.popup/0.0.1536.816/1920.0.1920.1032@1920.0.1920.1032" timestamp="1691164683955" />
-    <state x="2543" y="223" width="672" height="678" key="search.everywhere.popup" timestamp="1690986492868">
+    <state x="2543" y="223" width="672" height="678" key="search.everywhere.popup" timestamp="1691168898938">
       <screen x="1920" y="0" width="1920" height="1032" />
     </state>
-    <state x="2543" y="223" width="672" height="678" key="search.everywhere.popup/0.0.1536.816/1920.0.1920.1032@1920.0.1920.1032" timestamp="1690986492868" />
+    <state x="2543" y="223" width="672" height="678" key="search.everywhere.popup/0.0.1536.816/1920.0.1920.1032@1920.0.1920.1032" timestamp="1691168898938" />
   </component>
 </project>

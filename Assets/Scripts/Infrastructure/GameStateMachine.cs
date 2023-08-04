@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Infrastructure.Services;
 
 namespace Infrastructure
 {
@@ -13,7 +14,7 @@ namespace Infrastructure
             {
                 [typeof(BootstrapState)]=new BootstrapState(this,allServices,coroutineRunner),
                 [typeof(LoadInfoState)]=new LoadInfoState(this,allServices.Single<SceneLoader>(),allServices.Single<UiGameFactory>(),allServices.Single<WorldData>()),
-                [typeof(GameLoadInfoState)]=new GameLoadInfoState(this),
+                [typeof(GameLoadInfoState)]=new GameLoadInfoState(this,allServices.Single<GameFactory>(),allServices.Single<UiGameFactory>()),
                 [typeof(GameLoopState)]=new GameLoopState(this)
             };
         }
