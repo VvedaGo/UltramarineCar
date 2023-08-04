@@ -1,4 +1,5 @@
 using Infrastructure.Services;
+using Unity.VisualScripting;
 
 namespace Infrastructure
 {
@@ -13,9 +14,12 @@ namespace Infrastructure
             _allServices = allServices;
 
             _allServices.RegisterSingle<AssetProvider>(new AssetProvider());
+            _allServices.RegisterSingle<SceneLoader>(new SceneLoader(coroutineRunner));
             _allServices.RegisterSingle<UiGameFactory>(new UiGameFactory(_allServices.Single<AssetProvider>(),_allServices.Single<SceneLoader>()));
             _allServices.RegisterSingle<GameFactory>(new GameFactory(_allServices.Single<AssetProvider>()));
-            _allServices.RegisterSingle<SceneLoader>(new SceneLoader(coroutineRunner));
+            _allServices.RegisterSingle<WorldData>(new WorldData());
+            _allServices.RegisterSingle<SaveLoadService>(new SaveLoadService(_allServices.Single<WorldData>()));
+           
         }
         public void Enter()
         {

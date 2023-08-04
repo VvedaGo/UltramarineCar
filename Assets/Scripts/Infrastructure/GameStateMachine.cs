@@ -5,16 +5,16 @@ namespace Infrastructure
 {
     public class GameStateMachine
     {
-        private readonly ICoroutineRunner _coroutineRunner;
         private readonly Dictionary<Type,IGameState> _gameStatesDictionary;
         private IGameState _currentState;
         public GameStateMachine(AllServices allServices,ICoroutineRunner coroutineRunner)
         {
-            _coroutineRunner = coroutineRunner;
             _gameStatesDictionary=new Dictionary<Type, IGameState>
             {
-                [typeof(BootstrapState)]=new BootstrapState(this,allServices,_coroutineRunner),
-                [typeof(LoadInfoState)]=new LoadInfoState(this,allServices.Single<SceneLoader>(),allServices.Single<UiGameFactory>())
+                [typeof(BootstrapState)]=new BootstrapState(this,allServices,coroutineRunner),
+                [typeof(LoadInfoState)]=new LoadInfoState(this,allServices.Single<SceneLoader>(),allServices.Single<UiGameFactory>(),allServices.Single<WorldData>()),
+                [typeof(GameLoadInfoState)]=new GameLoadInfoState(this),
+                [typeof(GameLoopState)]=new GameLoopState(this)
             };
         }
 
