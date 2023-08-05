@@ -15,6 +15,7 @@ namespace Game.Car
         private int _coinsCount;
         public Action<int> ScoreChanged;
         public Action<int> CoinsChanged;
+        public Action Lose;
         
         public void Initialize(WayBuilder builder)
         {
@@ -33,6 +34,7 @@ namespace Game.Car
         {
             _carMover.enabled = false;
             _carRotator.enabled = false;
+            Lose?.Invoke();
            // FindObjectOfType<UiController>().OpenLosePanel();
         }
 

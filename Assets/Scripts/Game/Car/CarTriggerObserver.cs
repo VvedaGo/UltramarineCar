@@ -36,6 +36,7 @@ namespace Game.Car
             }
             else if (other.transform.TryGetComponent(out Coin coin))
             {
+                coin.PickUp();
                 OnCoinUp?.Invoke(1);
             }
         }

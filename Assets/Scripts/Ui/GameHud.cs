@@ -10,6 +10,7 @@ namespace Ui
    public class GameHud : MonoBehaviour
    {
       [SerializeField] private LosePanel _losePanel;
+      [SerializeField] private RelivePanel _relivePanel;
       [SerializeField] private TextMeshProUGUI _coinCount;
       [SerializeField] private TextMeshProUGUI _scoreCount;
    
@@ -28,6 +29,7 @@ namespace Ui
          
          car.ScoreChanged += UpdateCoinsCount;
          car.CoinsChanged += UpdateScore;
+         car.Lose += Lose;
       }
 
       private void UpdateCoinsCount(int count)
@@ -37,6 +39,12 @@ namespace Ui
       private void UpdateScore(int score)
       {
          _scoreCount.text = $"Score : {score}";
+      }
+
+      private void Lose()
+      {
+         _relivePanel.Open();
+         _relivePanel.StartTimer();
       }
    
 

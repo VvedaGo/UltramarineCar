@@ -22,11 +22,9 @@
     <list default="true" id="32187c82-a5fd-4392-8a9f-eb4a5d164e38" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UltramarineCar/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UltramarineCar/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UltramarineCar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UltramarineCar/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameHud.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameHud.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Car/Car.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Car/Car.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RelivePanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RelivePanel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Car/CarTriggerObserver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Car/CarTriggerObserver.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Coin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Coin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/GameHud.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ui/GameHud.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,10 +89,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GameLoadInfoState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/CarTriggerObserver.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/CentreTile.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Coin.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Car/CarTriggerObserver.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Car/Car.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/GameHud.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Coin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Car/CarTriggerObserver.cs" />
         <option value="$PROJECT_DIR$/Assets/RelivePanel.cs" />
       </list>
     </option>
@@ -144,7 +142,7 @@
       <workItem from="1690983026964" duration="12282000" />
       <workItem from="1691161917198" duration="6803000" />
       <workItem from="1691170193892" duration="2616000" />
-      <workItem from="1691215900573" duration="5190000" />
+      <workItem from="1691215900573" duration="6602000" />
     </task>
     <servers />
   </component>
