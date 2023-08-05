@@ -19,6 +19,7 @@
             </e>
           </e>
         </e>
+        <e p="Materials" t="Include" />
         <e p="Models" t="Include">
           <e p="Car" t="Include" />
           <e p="New" t="Include" />
@@ -34,58 +35,66 @@
           <e p="SampleScene" t="Include" />
         </e>
         <e p="Scripts" t="Include">
-          <e p="AssetPath.cs" t="Include" />
           <e p="Enums.cs" t="Include" />
           <e p="Extension.cs" t="Include" />
           <e p="Game" t="Include">
-            <e p="Baricade.cs" t="Include" />
-            <e p="BaseTile.cs" t="Include" />
             <e p="CameraLooker.cs" t="Include" />
-            <e p="Car.cs" t="Include" />
-            <e p="CarMover.cs" t="Include" />
-            <e p="CarRotator.cs" t="Include" />
-            <e p="CarTriggerObserver.cs" t="Include" />
-            <e p="CentreTile.cs" t="Include" />
-            <e p="DirectionOnTile.cs" t="Include" />
-            <e p="MenuHud.cs" t="Include" />
-            <e p="RoadDetector.cs" t="Include" />
-            <e p="Setting.cs" t="Include" />
-            <e p="SettingData.cs" t="Include" />
-            <e p="StartBaseTile.cs" t="Include" />
-            <e p="UiController.cs" t="Include" />
-            <e p="WayBuilder.cs" t="Include" />
-            <e p="ZoneDirectionSetter.cs" t="Include" />
-            <e p="ZoneScore.cs" t="Include" />
-          </e>
-          <e p="GameHud.cs" t="Include" />
-          <e p="Infrastructure" t="Include">
-            <e p="AllServices.cs" t="Include" />
-            <e p="AssetProvider.cs" t="Include" />
-            <e p="BootstrapState.cs" t="Include" />
-            <e p="EntryPoint.cs" t="Include" />
-            <e p="GameLoadInfoState.cs" t="Include" />
-            <e p="GameLoopState.cs" t="Include" />
-            <e p="GameStateMachine.cs" t="Include" />
-            <e p="ICoroutineRunner.cs" t="Include" />
-            <e p="IGameState.cs" t="Include" />
-            <e p="InputManager.cs" t="Include" />
-            <e p="InputSystem.cs" t="Include" />
-            <e p="ISaveLoadService.cs" t="Include" />
-            <e p="IService.cs" t="Include" />
-            <e p="LoadInfoState.cs" t="Include" />
-            <e p="PlayerProgress.cs" t="Include" />
-            <e p="SaveLoadService.cs" t="Include" />
-            <e p="SaveLoadSystem.cs" t="Include" />
-            <e p="SceneLoader.cs" t="Include" />
-            <e p="Services" t="Include">
-              <e p="GameFactory.cs" t="Include" />
+            <e p="Car" t="Include">
+              <e p="Car.cs" t="Include" />
+              <e p="CarMover.cs" t="Include" />
+              <e p="CarRotator.cs" t="Include" />
+              <e p="CarTriggerObserver.cs" t="Include" />
+              <e p="RoadDetector.cs" t="Include" />
             </e>
-            <e p="UiGameFactory.cs" t="Include" />
+            <e p="Coin.cs" t="Include" />
+            <e p="Road" t="Include">
+              <e p="Baricade.cs" t="Include" />
+              <e p="BaseTile.cs" t="Include" />
+              <e p="CentreTile.cs" t="Include" />
+              <e p="DirectionOnTile.cs" t="Include" />
+              <e p="StartBaseTile.cs" t="Include" />
+              <e p="ZoneDirectionSetter.cs" t="Include" />
+              <e p="ZoneScore.cs" t="Include" />
+            </e>
+            <e p="WayBuilder.cs" t="Include" />
+          </e>
+          <e p="Infrastructure" t="Include">
+            <e p="EntryPoint.cs" t="Include" />
+            <e p="GameStateMachine" t="Include">
+              <e p="BootstrapState.cs" t="Include" />
+              <e p="GameLoadInfoState.cs" t="Include" />
+              <e p="GameLoopState.cs" t="Include" />
+              <e p="GameStateMachine.cs" t="Include" />
+              <e p="IGameState.cs" t="Include" />
+            </e>
+            <e p="ICoroutineRunner.cs" t="Include" />
+            <e p="Services" t="Include">
+              <e p="AllServices.cs" t="Include" />
+              <e p="AssetProvider.cs" t="Include" />
+              <e p="GameFactory.cs" t="Include" />
+              <e p="InputManager.cs" t="Include" />
+              <e p="InputSystem.cs" t="Include" />
+              <e p="ISaveLoadService.cs" t="Include" />
+              <e p="IService.cs" t="Include" />
+              <e p="LoadInfoState.cs" t="Include" />
+              <e p="SaveLoadService.cs" t="Include" />
+              <e p="SaveLoadSystem.cs" t="Include" />
+              <e p="SceneLoader.cs" t="Include" />
+              <e p="UiGameFactory.cs" t="Include" />
+            </e>
+          </e>
+          <e p="StaticData" t="Include">
+            <e p="AssetPath.cs" t="Include" />
+            <e p="PlayerProgress.cs" t="Include" />
+            <e p="SettingData.cs" t="Include" />
+            <e p="TilesData.cs" t="Include" />
             <e p="WorldData.cs" t="Include" />
           </e>
-          <e p="LosePanel.cs" t="Include" />
-          <e p="StaticData" t="Include">
-            <e p="TilesData.cs" t="Include" />
+          <e p="Ui" t="Include">
+            <e p="GameHud.cs" t="Include" />
+            <e p="LosePanel.cs" t="Include" />
+            <e p="MenuHud.cs" t="Include" />
+            <e p="Setting.cs" t="Include" />
           </e>
         </e>
         <e p="Settings" t="Include">

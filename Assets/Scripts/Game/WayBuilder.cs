@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Game.Road;
 using Infrastructure.Services;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -10,7 +11,7 @@ namespace Game
         /*[SerializeField] private BaseTile _startTile;
         [SerializeField] private BaseTile[] _tile;
         [SerializeField]*/
-        private Car _car;
+        private Car.Car _car;
         private readonly Vector3 _sizeTile = new Vector3(80, 0, 80);
         private readonly Vector3 _sizeFirstTile = new Vector3(80, 0, 10);
        
@@ -34,7 +35,7 @@ namespace Game
             SpawnNextTile();
         }*/
 
-        public WayBuilder(GameFactory gameFactory, Car car)
+        public WayBuilder(GameFactory gameFactory, Car.Car car)
         {
             _gameFactory = gameFactory;
             _car = car;

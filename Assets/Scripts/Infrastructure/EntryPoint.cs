@@ -1,3 +1,5 @@
+using Infrastructure.GameStateMachine;
+using Infrastructure.Services;
 using UnityEngine;
 
 namespace Infrastructure
@@ -6,7 +8,7 @@ namespace Infrastructure
     {
         private void Awake()
         {
-            GameStateMachine gameStateMachine =new GameStateMachine(new AllServices(),this);  
+            GameStateMachine.GameStateMachine gameStateMachine =new GameStateMachine.GameStateMachine(new AllServices(),this);  
             gameStateMachine.Enter<BootstrapState>();
             DontDestroyOnLoad(gameObject);
         }
