@@ -25,6 +25,7 @@
           <e p="New" t="Include" />
           <e p="Tree" t="Include" />
         </e>
+        <e p="RelivePanel.cs" t="Include" />
         <e p="Resources" t="Include">
           <e p="Car" t="Include" />
           <e p="Service" t="Include" />

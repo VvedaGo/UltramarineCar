@@ -9,6 +9,7 @@ namespace Game.Car
         public Action Crash;
         public Action<Enums.DirectionRotate> SetNewDirection;
         public Action<int> OnScoreUp;
+        public Action<int> OnCoinUp;
         public Action EnterOnCentre;
         private void OnCollisionEnter(Collision other)
         {
@@ -35,7 +36,7 @@ namespace Game.Car
             }
             else if (other.transform.TryGetComponent(out Coin coin))
             {
-            
+                OnCoinUp?.Invoke(1);
             }
         }
     }

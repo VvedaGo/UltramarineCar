@@ -12,13 +12,16 @@ namespace Game.Car
         
         private WayBuilder _builder;
         private int _score;
+        private int _coinsCount;
         public Action<int> ScoreChanged;
+        public Action<int> CoinsChanged;
         
         public void Initialize(WayBuilder builder)
         {
             _builder = builder;
             _triggerObserver.Crash += Crash;
             _triggerObserver.OnScoreUp += AddScore;
+            _triggerObserver.OnCoinUp += AddCoin;
             _triggerObserver.EnterOnCentre += EndTile;
             _roadDetector.FromRoad += Crash;
         }
@@ -37,6 +40,12 @@ namespace Game.Car
         {
             _score += score;
             ScoreChanged?.Invoke(_score);
+        }
+
+        public void AddCoin(int count)
+        {
+            _coinsCount += count;
+            CoinsChanged?.Invoke(_coinsCount);
         }
     }
 }
