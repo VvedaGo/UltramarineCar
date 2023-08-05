@@ -5,15 +5,16 @@ using Random = UnityEngine.Random;
 
 namespace Game
 {
-    public class WayBuilder : MonoBehaviour
+    public class WayBuilder 
     {
-        [SerializeField] private BaseTile _startTile;
+        /*[SerializeField] private BaseTile _startTile;
         [SerializeField] private BaseTile[] _tile;
-        [SerializeField] private Car _car;
-
+        [SerializeField]*/
+        private Car _car;
         private readonly Vector3 _sizeTile = new Vector3(80, 0, 80);
+        private readonly Vector3 _sizeFirstTile = new Vector3(80, 0, 10);
        
-        private Vector3 _currentDirection = new Vector3(1, 0, 0);
+        private Vector3 _currentDirection = new Vector3(0, 0, -1);
         private Vector3 _currentPositionTile = new Vector3(0, 0, 0);
         
         private List<Vector2Int> _directionsTiles;
@@ -24,24 +25,37 @@ namespace Game
         private bool _first = false;
 
 
-        private void Start()
+        /*private void Start()
         {
             _tileOnMap = new Queue<BaseTile>();
             _tileOnMap.Enqueue(_startTile);
             _lastTile = _startTile;
             SpawnNextTile();
             SpawnNextTile();
-        }
+        }*/
 
-        public void Initialize(GameFactory gameFactory, Car car)
+        public WayBuilder(GameFactory gameFactory, Car car)
         {
             _gameFactory = gameFactory;
             _car = car;
+            _tileOnMap = new Queue<BaseTile>();
+           
         }
 
-        private void SpawnStartTile()
+        public void SpawnStartTile()
         {
-            
+            var tile= _gameFactory.SpawnStartTile();
+            Debug.Log(tile.transform.position);
+            tile.transform.position=Vector3.zero;
+            var baseTile = tile as StartBaseTile;
+            _car.transform.position = baseTile.SpawnPosition.position;
+            AddNewTile(tile);
+        }
+
+        public void SpawnFirstTiles()
+        {
+            SpawnNextTile(StartNextPosition());
+            SpawnNextTile(NextTilePosition());
         }
 
 
@@ -49,29 +63,40 @@ namespace Game
         {
             if (_first)
             {
-                SpawnNextTile();
+                SpawnNextTile(NextTilePosition());
             }
 
             if (!_first)
                 _first = true;
         }
 
-        private void SpawnNextTile()
+        private Vector3 StartNextPosition()
         {
+           return _currentPositionTile +=
+            new Vector3(_sizeFirstTile.x * _currentDirection.x, 0, (_sizeFirstTile.z/2+_sizeTile.z/2) * _currentDirection.z);
+        }
+        private void SpawnNextTile(Vector3 position)
+        {
+            Debug.Log(position);
             BaseTile nextTile = GetNextTile();
-            nextTile.transform.position = NextTilePosition();
+            nextTile.transform.position = position;
             RotateNextTile(nextTile);
             Vector3 bias = BiasNextTile(nextTile);
             Vector3 nextPosition = nextTile.transform.position + bias;
             _currentPositionTile += bias;
             nextTile.transform.position = nextPosition;
+            _currentDirection = nextTile.Finish.SideTile.DirectionBySide();
+            AddNewTile(nextTile);
+        }
+
+        private void AddNewTile(BaseTile nextTile)
+        {
             _lastTile = nextTile;
-            _currentDirection = _lastTile.Finish.SideTile.DirectionBySide();
             _tileOnMap.Enqueue(_lastTile);
             if (_tileOnMap.Count > 3)
             {
                 var tile = _tileOnMap.Dequeue();
-                Destroy(tile.gameObject);
+                Object.Destroy(tile.gameObject);
             }
         }
 
@@ -110,8 +135,9 @@ namespace Game
 
         private BaseTile GetNextTile()
         {
-            var til = Instantiate(_tile[Random.Range(0, _tile.Length)]);
-            return til;
+             return  _gameFactory.SpawnRandomTile();
+            /*var til = Object.Instantiate(_tile[Random.Range(0, _tile.Length)]);
+            return til;*/
         }
     }
 }

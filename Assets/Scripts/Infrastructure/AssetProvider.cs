@@ -15,7 +15,7 @@ namespace Infrastructure
         public Car GetCar() 
             => Resources.Load<Car>(AssetPath.CarPath);
 
-        public BaseTile GetStartTile() 
+        public StartBaseTile GetStartTile() 
             => Resources.Load<TilesData>(AssetPath.TileStorage).StartTile;
 
         public BaseTile[] GetTilesStorage() 

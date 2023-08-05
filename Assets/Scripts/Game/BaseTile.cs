@@ -1,17 +1,20 @@
 using UnityEngine;
 
-public class BaseTile : MonoBehaviour
+namespace Game
 {
-  public DirectionOnTile Start;
-  public DirectionOnTile Finish;
-
-  public void RotateTile(Vector3 rotationAngle)
+  public class BaseTile : MonoBehaviour
   {
-    transform.eulerAngles += rotationAngle;
-    if (Start != null)
+    public DirectionOnTile Start;
+    public DirectionOnTile Finish;
+
+    public void RotateTile(Vector3 rotationAngle)
     {
-      Start.SideTile = Start.SideTile.GetNextSideAfterRotate();
+      transform.eulerAngles += rotationAngle;
+      if (Start != null)
+      {
+        Start.SideTile = Start.SideTile.GetNextSideAfterRotate();
+      }
+      Finish.SideTile = Finish.SideTile.GetNextSideAfterRotate();
     }
-    Finish.SideTile = Finish.SideTile.GetNextSideAfterRotate();
   }
 }

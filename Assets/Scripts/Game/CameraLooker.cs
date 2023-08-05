@@ -1,17 +1,21 @@
 using UnityEngine;
 
-public class CameraLooker : MonoBehaviour
+namespace Game
 {
-    [SerializeField] private Vector3 _biasToLook;
-   [SerializeField] private Transform _target;
-
-    public void SetTarget(Transform target)
+    public class CameraLooker : MonoBehaviour
     {
-        _target = target;
-    }
+        [SerializeField] private Vector3 _biasToLook;
+        private Transform _target;
 
-    private void LateUpdate()
-    {
-        transform.position = _target.position + _biasToLook;
+        public void SetTarget(Transform target)
+        {
+            _target = target;
+        }
+
+        private void LateUpdate()
+        {
+            if(_target!=null)
+                transform.position = _target.position + _biasToLook;
+        }
     }
 }

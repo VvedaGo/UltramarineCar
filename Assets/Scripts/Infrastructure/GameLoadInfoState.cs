@@ -1,5 +1,6 @@
 using Game;
 using Infrastructure.Services;
+using UnityEngine;
 
 namespace Infrastructure
 {
@@ -27,11 +28,12 @@ namespace Infrastructure
 
             GameHud gameHud = _uiGameFactory.CreateGameHud();
             gameHud.Initialize(_gameStateMachine, _sceneLoader, _worldData, car);
-            //toDo:Spawn gameHud
-            //iitialize game hud
-            //spawn car
-            //initialize car
-            // create way Builder
+            
+            WayBuilder wayBuilder=new WayBuilder(_gameFactory,car);
+            wayBuilder.SpawnStartTile();
+            wayBuilder.SpawnFirstTiles();
+            car.Initialize(wayBuilder);
+            Camera.main.GetComponent<CameraLooker>().SetTarget(car.transform);
             _gameStateMachine.Enter<GameLoopState>();
             
         }

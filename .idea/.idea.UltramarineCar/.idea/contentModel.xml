@@ -27,6 +27,7 @@
         <e p="Resources" t="Include">
           <e p="Car" t="Include" />
           <e p="Service" t="Include" />
+          <e p="StaticData" t="Include" />
         </e>
         <e p="Scenes" t="Include">
           <e p="GameScene" t="Include" />
@@ -50,6 +51,7 @@
             <e p="RoadDetector.cs" t="Include" />
             <e p="Setting.cs" t="Include" />
             <e p="SettingData.cs" t="Include" />
+            <e p="StartBaseTile.cs" t="Include" />
             <e p="UiController.cs" t="Include" />
             <e p="WayBuilder.cs" t="Include" />
             <e p="ZoneDirectionSetter.cs" t="Include" />

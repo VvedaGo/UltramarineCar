@@ -9,9 +9,10 @@ namespace Game
         [SerializeField] private RoadDetector _roadDetector;
         [SerializeField] private CarMover _carMover;
         [SerializeField] private CarRotator _carRotator;
-        [SerializeField] private WayBuilder _builder;
+         private WayBuilder _builder;
         private int _score;
         public Action<int> ScoreChanged;
+        
         private void Awake()
         {
             _triggerObserver.Crash += Crash;
@@ -20,6 +21,10 @@ namespace Game
             _roadDetector.FromRoad += Crash;
         }
 
+        public void Initialize(WayBuilder builder)
+        {
+            _builder = builder;
+        }
         private void EndTile()
         {
             _builder.EndTile();

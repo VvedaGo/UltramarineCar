@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2414e0ac3bab1bf4795dd21e3dc733f1, type: 3}
   m_Name: TilesData
   m_EditorClassIdentifier: 
-  StartTile: {fileID: 0}
-  Tiles: []
+  StartTile: {fileID: 1508034443342477727, guid: f93f0558bbe6e3441a3894defd514f24, type: 3}
+  Tiles:
+  - {fileID: 3251680232836450809, guid: e9accfa9a7d95384985794460ea5ae5a, type: 3}
+  - {fileID: 4783936846237361095, guid: 5baf0b7cfd434df4f9a3308f993c53f6, type: 3}
+  - {fileID: 1133540723141604324, guid: d0bc3cc3bd1f34945b0097436bb9a843, type: 3}

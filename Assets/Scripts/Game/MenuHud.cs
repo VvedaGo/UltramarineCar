@@ -34,7 +34,7 @@ namespace Game
 
         public void Play()
         {
-            _sceneLoader.Load("GameScene"/*,GameSceneLoaded*/);
+            _sceneLoader.Load("GameScene",GameSceneLoaded);
         }
 
         private void GameSceneLoaded()

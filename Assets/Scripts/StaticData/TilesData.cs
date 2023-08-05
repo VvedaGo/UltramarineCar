@@ -1,3 +1,4 @@
+using Game;
 using UnityEngine;
 
 namespace StaticData
@@ -5,7 +6,7 @@ namespace StaticData
     [CreateAssetMenu(menuName = "Create TilesData", fileName = "TilesData", order = 0)]
     public class TilesData : ScriptableObject
     {
-        public BaseTile StartTile;
+        public StartBaseTile StartTile;
         public BaseTile[] Tiles;
     }
 
