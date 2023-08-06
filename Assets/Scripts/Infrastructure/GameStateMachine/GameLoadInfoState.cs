@@ -36,7 +36,7 @@ namespace Infrastructure.GameStateMachine
             wayBuilder.SpawnStartTile();
             wayBuilder.SpawnFirstTiles();
             car.Initialize(wayBuilder);
-            Camera.main.GetComponent<CameraLooker>().SetTarget(car.transform);
+            Camera.main.transform.parent.GetComponent<CameraLooker>().SetTarget(car.transform);
             _gameStateMachine.Enter<GameLoopState>();
             
         }
