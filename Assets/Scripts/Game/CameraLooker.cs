@@ -13,11 +13,14 @@ namespace Game
 
         [SerializeField] private CarTriggerObserver _carTriggerObserver;
 
-        int targetAngle = 0;
+        float targetAngle = 0;
 
-        public void SetTarget(Transform target)
+        Transform myCar;
+
+        public void SetTarget(Transform target, Car.Car car)
         {
-            Debug.Log("SetTarget cast");
+            myCar = car.transform;
+
             _carTriggerObserver = GameObject.FindObjectOfType<CarTriggerObserver>();
 
             _carTriggerObserver.SetNewDirection += SetDirectionRotate;
@@ -32,17 +35,15 @@ namespace Game
                 transform.position = _target.position;
 
                 cameraTransform.localPosition = _biasToLook;
-
-                
             }
         }
 
         public void SetDirectionRotate(DirectionRotate directionRotate)
         {
             if (directionRotate == DirectionRotate.Left)
-                targetAngle += 60;
+                targetAngle = myCar.eulerAngles.y + 60;
             else if (directionRotate == DirectionRotate.Right)
-                targetAngle -= 60;
+                targetAngle = myCar.eulerAngles.y + -60; ;
 
             transform.DORotate(new Vector3(0, targetAngle, 0), 5);
         }
