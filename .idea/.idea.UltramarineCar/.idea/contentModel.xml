@@ -47,7 +47,6 @@
             </e>
           </e>
         </e>
-        <e p="RelivePanel.cs" t="Include" />
         <e p="Resources" t="Include">
           <e p="Car" t="Include" />
           <e p="Service" t="Include" />
@@ -67,6 +66,7 @@
               <e p="CarMover.cs" t="Include" />
               <e p="CarRotator.cs" t="Include" />
               <e p="CarTriggerObserver.cs" t="Include" />
+              <e p="ParameterCarBeforeRotate.cs" t="Include" />
               <e p="RoadDetector.cs" t="Include" />
             </e>
             <e p="Coin.cs" t="Include" />
@@ -117,6 +117,7 @@
             <e p="GameHud.cs" t="Include" />
             <e p="LosePanel.cs" t="Include" />
             <e p="MenuHud.cs" t="Include" />
+            <e p="RelivePanel.cs" t="Include" />
             <e p="Setting.cs" t="Include" />
           </e>
         </e>

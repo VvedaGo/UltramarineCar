@@ -78,7 +78,7 @@ namespace Game
         }
         private void SpawnNextTile(Vector3 position)
         {
-            Debug.Log(position);
+//            Debug.Log(position);
             BaseTile nextTile = GetNextTile();
             nextTile.transform.position = position;
             RotateNextTile(nextTile);

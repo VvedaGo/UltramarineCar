@@ -121,7 +121,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8323613269212882515}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7275167794789764214}
+        m_TargetAssemblyTypeName: Ui.RelivePanel, Assembly-CSharp
+        m_MethodName: WatchAdd
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1548948343769190038
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,7 +255,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 759444641235227882}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7275167794789764214}
+        m_TargetAssemblyTypeName: Ui.RelivePanel, Assembly-CSharp
+        m_MethodName: PayCoin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2160121982469447896
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,6 +903,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6489273faec7ebc4fad2045e806b668e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _fillAmountTime: {fileID: 2402394117601328244}
+  _coinsCount: {fileID: 0}
+  _timeLeftText: {fileID: 8135795593875180061}
+  _losePanel: {fileID: 2384119188268000666}
+  _gameHud: {fileID: 1238667094080146677}
 --- !u!1 &8174751859405381116
 GameObject:
   m_ObjectHideFlags: 0
@@ -1801,6 +1830,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _losePanel: {fileID: 2384119188268000666}
+  _relivePanel: {fileID: 7275167794789764214}
   _coinCount: {fileID: 3842982785367670614}
   _scoreCount: {fileID: 9041790103072484677}
 --- !u!1 &9041790102918852507

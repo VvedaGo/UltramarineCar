@@ -17,6 +17,7 @@ namespace Ui
       private SceneLoader _sceneLoader;
       private WorldData _worldData;
       private GameStateMachine _gameStateMachine;
+      private Car _car;
 
       public void Initialize(GameStateMachine gameStateMachine,SceneLoader sceneLoader,WorldData worldData,Car car)
       {
@@ -26,10 +27,11 @@ namespace Ui
          _losePanel.Initialize(_sceneLoader,_gameStateMachine);
          
          UpdateCoinsCount(_worldData.PlayerProgress.CountCoins);
-         
-         car.ScoreChanged += UpdateCoinsCount;
-         car.CoinsChanged += UpdateScore;
-         car.Lose += Lose;
+
+         _car = car;
+         _car.ScoreChanged += UpdateCoinsCount;
+         _car.CoinsChanged += UpdateScore;
+         _car.Lose += Lose;
       }
 
       private void UpdateCoinsCount(int count)
@@ -45,6 +47,11 @@ namespace Ui
       {
          _relivePanel.Open();
          _relivePanel.StartTimer();
+      }
+
+      public void Relive()
+      {
+         _car.Relive();
       }
    
 

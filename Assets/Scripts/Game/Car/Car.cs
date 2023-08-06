@@ -24,7 +24,7 @@ namespace Game.Car
             _triggerObserver.OnScoreUp += AddScore;
             _triggerObserver.OnCoinUp += AddCoin;
             _triggerObserver.EnterOnCentre += EndTile;
-            _roadDetector.FromRoad += Crash;
+            _roadDetector.FromRoad += CrashFromRoad;
         }
         private void EndTile()
         {
@@ -34,17 +34,34 @@ namespace Game.Car
         {
             _carMover.enabled = false;
             _carRotator.enabled = false;
+            _carRotator.IsDeath = true;
             Lose?.Invoke();
            // FindObjectOfType<UiController>().OpenLosePanel();
         }
 
-        public void AddScore(int score)
+        public void Relive()
+        {
+            _carMover.enabled = true;
+            _carRotator.enabled = true;
+            _carRotator.SetParameterAfterRelive();
+            _carRotator.IsDeath = false;
+        }
+
+        private void CrashFromRoad()
+        {
+            _carMover.enabled = false;
+            _carRotator.enabled = false;
+            _carRotator.IsDeath = true;
+            Lose?.Invoke();
+        }
+
+        private void AddScore(int score)
         {
             _score += score;
             ScoreChanged?.Invoke(_score);
         }
 
-        public void AddCoin(int count)
+        private void AddCoin(int count)
         {
             _coinsCount += count;
             CoinsChanged?.Invoke(_coinsCount);

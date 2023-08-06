@@ -15,6 +15,7 @@ namespace Game.Car
         {
             if (other.transform.TryGetComponent(out Baricade baricade))
             {
+                baricade.DisableCollider();
                 Crash?.Invoke();
             }
         }
