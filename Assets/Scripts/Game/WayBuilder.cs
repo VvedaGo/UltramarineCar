@@ -46,7 +46,7 @@ namespace Game
         public void SpawnStartTile()
         {
             var tile= _gameFactory.SpawnStartTile();
-            Debug.Log(tile.transform.position);
+//            Debug.Log(tile.transform.position);
             tile.transform.position=Vector3.zero;
             var baseTile = tile as StartBaseTile;
             _car.transform.position = baseTile.SpawnPosition.position;

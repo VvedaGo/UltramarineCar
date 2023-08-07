@@ -27,7 +27,7 @@ namespace Game.Car
             _inputSystem = FindObjectOfType<InputSystem>();
             _inputSystem.MouseDown += StartRotate;
             _carTriggerObserver.SetNewDirection += SetDirectionRotate;
-            _directionRotate = DirectionRotate.Left;
+            _directionRotate = DirectionRotate.None;
             _parameterCarBeforeRotate = new ParameterCarBeforeRotate();
         }
 
@@ -38,68 +38,86 @@ namespace Game.Car
         }
 
 
-        private void StartRotate()
-        {
-//        Debug.Log("Start rotayte");
-            if (_canRotate&&!IsDeath)
-            {
-                _parameterCarBeforeRotate.Position = transform.position;
-                _parameterCarBeforeRotate.Rotation = transform.eulerAngles;
-                Debug.Log(JsonUtility.ToJson(_parameterCarBeforeRotate));
-                _inRotation = true;
-                _canRotate = false;
-            }
-        }
-
         public void SetParameterAfterRelive()
         {
-            Debug.Log(JsonUtility.ToJson(_parameterCarBeforeRotate));
+        
             transform.position = _parameterCarBeforeRotate.Position;
             transform.eulerAngles = _parameterCarBeforeRotate.Rotation;
         }
 
+        private void StartRotate()
+        {
+//        Debug.Log("Start rotayte");
+            if (!_inRotation&&!IsDeath)
+            {
+                _parameterCarBeforeRotate.Position = transform.position;
+                _parameterCarBeforeRotate.Rotation = transform.eulerAngles;
+             //   Debug.Log(JsonUtility.ToJson(_parameterCarBeforeRotate));
+                _inRotation = true;
+               // _canRotate = false;
+               // _usedLastRotation = true;
+            }
+        }
+
+        private bool _useNextDirection;
         public void EndRotate()
         {
-            _inRotation = false;
-            _canRotate = true;
+           
+            //_canRotate = true;
+
+            Debug.Log("End rotate "+ _useNextDirection);
+            if (_useNextDirection)
+            {
+                _directionRotate = _nextDirection;
+                _useNextDirection = false;
+                SetNextGoalRotation();
+            }
+            else
+            {
+                _usedLastRotation = true;
+            }
+
+            
+          
+           
+           
+        }
+
+        public void SetDirectionRotate(DirectionRotate directionRotate)
+        {
+            if(directionRotate==DirectionRotate.None)
+                return;
+            
+            Debug.Log("Set new direction "+ directionRotate);
+            if (_usedLastRotation)
+            {
+                Debug.Log("If qwe");
+              
+                _directionRotate = directionRotate;
+              
+               // _canRotate = true;
+                SetNextGoalRotation();
+                _usedLastRotation = false;
+            }
+            else
+            {
+                Debug.Log("Else");
+                _useNextDirection = true;
+                    _nextDirection = directionRotate;
+            }
+           
+        }
+
+        private void SetNextGoalRotation()
+        {
             _goalRotateAngle = transform.eulerAngles + new Vector3(0, 90, 0) * (int) _directionRotate;
             if (_goalRotateAngle.y > 360)
                 _goalRotateAngle -= new Vector3(0, 360, 0);
             if (_goalRotateAngle.y < 0)
                 _goalRotateAngle += new Vector3(0, 360, 0);
-        }
-
-        public void SetDirectionRotate(DirectionRotate directionRotate)
-        {
-            if (!_inRotation)
-            { 
-               // Debug.Log("!In rot");
-                if (_usedLastRotation)
-                {
-                  //  Debug.Log("if");
-                    _directionRotate = directionRotate;
-                    _canRotate = true;
-                    _goalRotateAngle = transform.eulerAngles + new Vector3(0, 90, 0) * (int) _directionRotate;
-                    if (_goalRotateAngle.y > 360)
-                        _goalRotateAngle -= new Vector3(0, 360, 0);
-                    if (_goalRotateAngle.y < 0)
-                        _goalRotateAngle += new Vector3(0, 360, 0);
-                }
-                else
-                {
-                  //  Debug.Log("Elseee");
-                        _nextDirection = directionRotate;
-                  //  _usedLastRotation = true;
-                }
-
-               
-            }
-            else
-            {
-//                Debug.Log("Else");
-                _usedLastRotation = true;
-                _nextDirection = directionRotate;
-            }
+                
+            Debug.Log("Goal "+ _goalRotateAngle);
+            Debug.Log(transform.eulerAngles);
         }
 
         private void FixedUpdate()
@@ -111,8 +129,8 @@ namespace Game.Car
                 if (Vector3.Distance(transform.eulerAngles, _goalRotateAngle) <= _speedRotate )
                 {
                     transform.eulerAngles = _goalRotateAngle;
-                    _directionRotate = _nextDirection;
-                    _usedLastRotation = true;
+                    _inRotation = false;
+                  //  _usedLastRotation = true;
                     EndRotate();
                 }
             }
