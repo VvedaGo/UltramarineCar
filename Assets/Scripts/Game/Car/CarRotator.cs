@@ -115,9 +115,7 @@ namespace Game.Car
                 _goalRotateAngle -= new Vector3(0, 360, 0);
             if (_goalRotateAngle.y < 0)
                 _goalRotateAngle += new Vector3(0, 360, 0);
-                
-            Debug.Log("Goal "+ _goalRotateAngle);
-            Debug.Log(transform.eulerAngles);
+           
         }
 
         private void FixedUpdate()

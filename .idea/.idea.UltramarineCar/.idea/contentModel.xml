@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\Sergv\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Sergv\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_UltramarineCar.2050433512.00" t="ExcludeRecursive" />
-    <e p="D:\GitNew\UltramarineCar" t="IncludeRecursive">
+    <e p="C:\Users\Sergv\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_UltramarineCar.179563387.00" t="ExcludeRecursive" />
+    <e p="D:\GitNew\DanceBattle\moongames\UltramarineCar" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -18,6 +18,93 @@
             <e p="Materials" t="Include" />
             <e p="Shaders" t="Include">
               <e p="Stylized Sky.shader" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="GUI Mobile Hyper-Casual" t="Include">
+          <e p="Artwork PSD + Screens" t="Include">
+            <e p="PSD" t="Include" />
+            <e p="SCREENS" t="Include" />
+          </e>
+          <e p="Font" t="Include" />
+          <e p="Read Me" t="Include" />
+          <e p="Sprites" t="Include">
+            <e p="Additional White Icons" t="Include" />
+            <e p="Background" t="Include" />
+            <e p="Emojis PNG" t="Include">
+              <e p="PNG" t="Include">
+                <e p="Set Emojis-assets" t="Include" />
+              </e>
+            </e>
+            <e p="Items PSD + PNG" t="Include">
+              <e p="Badge" t="Include" />
+              <e p="Bag" t="Include">
+                <e p="Bag" t="Include" />
+                <e p="Bag 1" t="Include" />
+              </e>
+              <e p="Ball" t="Include" />
+              <e p="Bolt" t="Include" />
+              <e p="Bomb" t="Include" />
+              <e p="Bow" t="Include" />
+              <e p="Card" t="Include" />
+              <e p="Chest" t="Include" />
+              <e p="Clock" t="Include" />
+              <e p="Closebook" t="Include" />
+              <e p="Clover" t="Include" />
+              <e p="Coins" t="Include">
+                <e p="Coin" t="Include" />
+              </e>
+              <e p="Crown" t="Include" />
+              <e p="Cup" t="Include" />
+              <e p="Diamonds" t="Include">
+                <e p="Diamond 2" t="Include" />
+                <e p="Diamonds" t="Include" />
+              </e>
+              <e p="Diplome" t="Include" />
+              <e p="Double Sword" t="Include" />
+              <e p="Eye" t="Include" />
+              <e p="Firecracker" t="Include" />
+              <e p="Flag" t="Include" />
+              <e p="Gems" t="Include">
+                <e p="Gem 2" t="Include" />
+                <e p="Gem 2 Pack" t="Include" />
+              </e>
+              <e p="Gift" t="Include" />
+              <e p="Glasses" t="Include" />
+              <e p="Gun" t="Include" />
+              <e p="Hand" t="Include" />
+              <e p="Heart" t="Include" />
+              <e p="Hourglass" t="Include" />
+              <e p="Icon Club" t="Include" />
+              <e p="Key" t="Include" />
+              <e p="Mail" t="Include" />
+              <e p="Mushroom" t="Include" />
+              <e p="Open Book" t="Include" />
+              <e p="Pills" t="Include" />
+              <e p="Podium" t="Include" />
+              <e p="Potion" t="Include">
+                <e p="Potion" t="Include" />
+                <e p="Potion2" t="Include" />
+              </e>
+              <e p="Radial Shine" t="Include" />
+              <e p="Sherif Stars" t="Include" />
+              <e p="Shield" t="Include" />
+              <e p="Skull" t="Include" />
+              <e p="Small Stars" t="Include" />
+              <e p="Stars" t="Include" />
+              <e p="Store" t="Include" />
+              <e p="Sword" t="Include" />
+              <e p="Target" t="Include" />
+              <e p="Token" t="Include" />
+              <e p="TV" t="Include" />
+              <e p="Wizard Hat" t="Include" />
+            </e>
+            <e p="Sprites by Menu" t="Include">
+              <e p="Buttons-assets" t="Include" />
+              <e p="Home-assets" t="Include" />
+              <e p="In Game-assets" t="Include" />
+              <e p="Prize Machine-assets" t="Include" />
+              <e p="Win-assets" t="Include" />
             </e>
           </e>
         </e>
@@ -48,6 +135,7 @@
           </e>
         </e>
         <e p="Resources" t="Include">
+          <e p="BillingMode.json" t="Include" />
           <e p="Car" t="Include" />
           <e p="Service" t="Include" />
           <e p="StaticData" t="Include" />
